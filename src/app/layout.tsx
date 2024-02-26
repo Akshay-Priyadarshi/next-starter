@@ -19,8 +19,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(raleway.className, poppins.className, "m-8")}>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={cn(
+          raleway.className,
+          poppins.className,
+          "m-8 md:m-12 lg:m-16"
+        )}
+      >
         <Providers>
           <Navbar />
           {children}
