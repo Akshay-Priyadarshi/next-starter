@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Poppins, Raleway } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
+import Navbar from "@/components/navbar"
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] })
 const raleway = Raleway({ subsets: ["latin"] })
@@ -18,7 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(raleway.className, poppins.className, "mx-20")}>
+      <body className={cn(raleway.className, poppins.className, "m-8")}>
+        <Navbar />
         {children}
       </body>
     </html>
