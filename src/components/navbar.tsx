@@ -1,6 +1,6 @@
 import Image from "next/image"
 import React from "react"
-import BrandLogo from "../../public/next.svg"
+import BrandLogo from "../../public/brand-logo.svg"
 import Link from "next/link"
 import ModalMenubar from "./modal-menubar"
 import Menubar from "./menubar"

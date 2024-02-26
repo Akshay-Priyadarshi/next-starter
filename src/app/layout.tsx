@@ -10,7 +10,8 @@ const raleway = Raleway({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Next Starter",
-  description: "Created by Akshay Priyadarshi"
+  description: "Created by Akshay Priyadarshi",
+  applicationName: "Next Starter"
 }
 
 export default function RootLayout({
