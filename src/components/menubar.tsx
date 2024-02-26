@@ -1,13 +1,14 @@
+import Link from "next/link"
 import React from "react"
 
 const Menubar = () => {
   return (
     <ul className="hidden md:flex md:justify-between md:items-center">
       <li className="mr-8">
-        <a href="/">Home</a>
+        <Link href={"/"}>Home</Link>
       </li>
       <li>
-        <a href="/about">About</a>
+        <Link href={"/about"}>About</Link>
       </li>
     </ul>
   )
