@@ -3,6 +3,7 @@ import { Poppins, Raleway } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import Navbar from "@/components/navbar"
+import Providers from "./providers"
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] })
 const raleway = Raleway({ subsets: ["latin"] })
@@ -20,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(raleway.className, poppins.className, "m-8")}>
-        <Navbar />
-        {children}
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   )

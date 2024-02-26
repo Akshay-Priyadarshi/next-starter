@@ -8,7 +8,11 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
 }
 
 export function Providers({ children }: React.PropsWithChildren<{}>) {
-  return <ThemeProvider attribute="class">{children}</ThemeProvider>
+  return (
+    <ThemeProvider attribute="class" defaultTheme="system">
+      {children}
+    </ThemeProvider>
+  )
 }
 
 export default Providers

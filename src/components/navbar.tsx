@@ -7,7 +7,12 @@ import { ModeToggle } from "./mode-toggle"
 const Navbar = () => {
   return (
     <nav className="w-full flex justify-between items-center mb-8">
-      <Image className="w-28" src={BrandLogo} alt="brand-logo" />
+      <Image
+        className="w-28 dark:invert"
+        src={BrandLogo}
+        alt="brand-logo"
+        priority
+      />
       <Menubar />
       <ModeToggle />
     </nav>

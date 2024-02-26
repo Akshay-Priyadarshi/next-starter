@@ -1,7 +1,10 @@
+import { Button } from "@/components/ui/button"
+
 export default function Home() {
   return (
-    <main className="bg-background flex justify-start">
-      <h1 className="font-light text-3xl text-foreground">Next App Starter!</h1>
+    <main className="flex flex-col justify-start">
+      <h1 className="font-light text-3xl">Next App Starter!</h1>
+      <Button>SignUp</Button>
     </main>
   )
 }
